@@ -79,8 +79,6 @@ $(document).ready(function() {
 
 
 
-
-
   		var tailleMdp = parseInt($('#tailleMdpId').val(), 10);
   		var quantiteMdp = parseInt($('#nbMdpId').val(), 10);
   		var listeMdp = genererListeMdp(jeuCaracteres, tailleMdp, quantiteMdp);
@@ -96,18 +94,10 @@ $(document).ready(function() {
   			texte = '<p>'+listeMdp.join('</p><p>')+'</p>';
   		}
 
-
-
-
-
-
 		$("#zoneAffichage").append(
 			'<p>'+texte+'</p>');
 
 	});/*End Click Generer*/
 
 
-
-
-	
 });/*End documents ready*/

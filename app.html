@@ -7,15 +7,15 @@
 		<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 <body>
+		<div class="container">
+			<div class="header" id="header"><h3>Générateur de mots de passe</h3></div>
 
-<div class="panel panel-primary">
 
-	<div class="panel-body">Générateur de mot de passe</div>
-  		<div class="panel-footer">
-
-			<form>
+			<form id="form">
 
 				<div class="form-group">
 				<label for="tailleMdpId">Taille du mot de passe</label>
@@ -43,14 +43,12 @@
 					<div id="caracSpeDiv"></div>
 				</div>
 
-				<div id="zoneAffichage" class="well well-lg"></div>
-
-				<button type="button" id="btnGenererId">GENERER ! </button>
-
+				<button type="button" id="btnGenererId" class="btn btn-primary btn-lg">Générer ! </button>
 			</form>
-		</div>
-	</div>
 
+			<div id="zoneAffichage" class="alert alert-info"></div>
+
+		</div>
 
 <script src="js/vendor/jquery-2.2.0.min.js"></script>
 
