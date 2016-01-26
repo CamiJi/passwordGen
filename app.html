@@ -10,42 +10,49 @@
 </head>
 <body>
 
-<form>
+<div class="panel panel-primary">
 
-	<div class="form-group">
-	<label for="tailleMdpId">Taille du mot de passe</label>
-	<input id="tailleMdpId" type="number" name="tailleMdp" min="8" max="32" value="16">
+	<div class="panel-body">Générateur de mot de passe</div>
+  		<div class="panel-footer">
+
+			<form>
+
+				<div class="form-group">
+				<label for="tailleMdpId">Taille du mot de passe</label>
+				<input id="tailleMdpId" type="number" name="tailleMdp" min="8" max="32" value="16">
+				</div>
+
+				<div class="form-group">	
+				<label for="nbMdpId">Nombre de mot de passe</label>
+				<input id="nbMdpId" type="number" name="nbMdp" min="1" max="10" value="1">
+				</div>
+
+				<div class="form-group">
+				<label for="caracMajId">Autoriser caractères majuscules</label>
+				<input type="checkbox" id="caracMajId" name="caracMaj">
+				</div>
+
+				<div class="form-group">
+				<label for="caracNumId">Autoriser caractères numériques</label>
+				<input type="checkbox" id="caracNumId" name="caracNum">
+				</div>
+
+				<div class="form-group">
+				<label for="caracSpeId">Autoriser caractères spéciaux</label>
+				<input type="checkbox" id="caracSpeId" name="caracSpe">
+					<div id="caracSpeDiv"></div>
+				</div>
+
+				<div id="zoneAffichage" class="well well-lg"></div>
+
+				<button type="button" id="btnGenererId">GENERER ! </button>
+
+			</form>
+		</div>
 	</div>
 
-	<div class="form-group">	
-	<label for="nbMdpId">Nombre de mot de passe</label>
-	<input id="nbMdpId" type="number" name="nbMdp" min="1" max="10" value="1">
-	</div>
 
-	<div class="form-group">
-	<label for="caracMajId">Autoriser caractères majuscules</label>
-	<input type="checkbox" id="caracMajId" name="caracMaj">
-	</div>
-
-	<div class="form-group">
-	<label for="caracNumId">Autoriser caractères numériques</label>
-	<input type="checkbox" id="caracNumId" name="caracNum">
-	</div>
-
-	<div class="form-group">
-	<label for="caracSpeId">Autoriser caractères spéciaux</label>
-	<input type="checkbox" id="caracSpeId" name="caracSpe">
-		<div id="caracSpeDiv"></div>
-	</div>
-
-	<div id="zoneAffichage" class="well well-lg"></div>
-
-	<button type="button" id="btnGenererId">GENERER ! </button>
-
-</form>
-
-
-<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="js/vendor/jquery-2.2.0.min.js"></script>
 
 <script src="js/main.js"></script>
 </body>
